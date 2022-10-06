@@ -28,38 +28,40 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please Select Your Language"
-        android:id="@+id/selectText"
+        android:text="Enter Amount in Multiples of 100"
+        android:id="@+id/enterAmount"
         android:textColor="@color/white"
         android:layout_margin="20dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mainText"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etForAmount"
+        android:layout_margin="80dp"
+        android:padding="10dp"
+        android:hint="Enter Amount Here"
+        android:textColor="#000000"
+        android:textColorHint="#70ffffff"
+        android:background="#50ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterAmount"/>
+
     <android.widget.Button
         android:layout_width="90dp"
+        android:id="@+id/submitAmount"
         android:layout_height="wrap_content"
-        android:id="@+id/setTamil"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginTop="300dp"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:text="தமிழ்"
+        android:text="Submit"
         android:background="@drawable/buttons"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/selectText"/>
-    <android.widget.Button
-        android:layout_width="90dp"
-        android:id="@+id/selectEnglish"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="30dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:text="English"
-        android:background="@drawable/buttons"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/setTamil"/>
+        app:layout_constraintTop_toBottomOf="@id/etForAmount"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

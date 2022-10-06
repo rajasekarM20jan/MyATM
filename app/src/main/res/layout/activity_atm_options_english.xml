@@ -28,8 +28,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please Select Your Language"
-        android:id="@+id/selectText"
+        android:text="Please Select Options From Below"
+        android:id="@+id/selectOptions"
         android:textColor="@color/white"
         android:layout_margin="20dp"
         android:textSize="20sp"
@@ -37,29 +37,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mainText"/>
     <android.widget.Button
-        android:layout_width="90dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:id="@+id/setTamil"
+        android:id="@+id/withdraw"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="30dp"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:text="தமிழ்"
+        android:text="Withdrawal"
         android:background="@drawable/buttons"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/selectText"/>
+        app:layout_constraintTop_toBottomOf="@id/selectOptions"/>
     <android.widget.Button
-        android:layout_width="90dp"
-        android:id="@+id/selectEnglish"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:id="@+id/balanceCheck"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="30dp"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:text="English"
+        android:text="Balance Enquiry"
         android:background="@drawable/buttons"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/setTamil"/>
+        app:layout_constraintTop_toBottomOf="@id/withdraw"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
