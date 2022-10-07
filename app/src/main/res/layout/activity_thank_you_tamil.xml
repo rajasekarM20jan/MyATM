@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#70000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:id="@+id/mainText"
+        android:fontFamily="@font/bangers"
+        android:text="ஜாவாவின் ஏ.டி.எம்"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="நன்றி !"
+        android:padding="10dp"
+        android:id="@+id/thankYouTam"
+        android:textColor="@color/white"
+        android:layout_margin="180dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainText"/>
+
+    <android.widget.Button
+        android:layout_width="90dp"
+        android:id="@+id/doneInThankTam"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="முடிந்தது"
+        android:background="@drawable/buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
