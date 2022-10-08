@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:text="உங்கள் இருப்புத் தொகை "
         android:padding="10dp"
-        android:id="@+id/displayBalance"
+        android:id="@+id/displayBalanceTam"
         android:textColor="@color/white"
         android:layout_margin="80dp"
         android:textSize="20sp"
@@ -40,7 +40,7 @@
 
     <android.widget.Button
         android:layout_width="90dp"
-        android:id="@+id/okInBalPage"
+        android:id="@+id/okInBalPageTam"
         android:layout_height="wrap_content"
         android:layout_margin="50dp"
         android:textColor="@color/black"

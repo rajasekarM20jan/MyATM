@@ -7,14 +7,15 @@ import org.json.JSONObject;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-public class ControllerClass extends AppCompatActivity {
+public class Controller extends AppCompatActivity {
     public String debitCardNum,dbPin,balanceInAcc,accType;
-    public ArrayList<Database> dataFromJson= new ArrayList<Database>();
-    public ControllerClass() throws Exception{
-        InputStream getJson=getAssets().open("assets/data.json");
+    public ArrayList<Database> dataFromJson;
+    public Controller() throws Exception{
+        InputStream getJson=getAssets().open("data.json");
         int sizeOfInputStream=getJson.available();
         byte[] myByte=new byte[sizeOfInputStream];
         getJson.read(myByte);
+        getJson.close();
         String data= new String(myByte,"UTF-8");
         JSONArray arr= new JSONArray(data);
         for(int i=0;i<arr.length();i++){
